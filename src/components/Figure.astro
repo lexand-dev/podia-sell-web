@@ -1,0 +1,12 @@
+---
+interface Props {
+  src: string
+  alt: string
+}
+const { src, alt } = Astro.props
+---
+<figure class="rounded-lg overflow-hidden">
+  <picture>
+    <img src={src} alt={alt}>
+  </picture>
+</figure>
