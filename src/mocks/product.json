@@ -1,0 +1,26 @@
+{
+  "COURSES": {
+    "tag": "ONLINE COURSES",
+    "title": "Online Courses",
+    "body": "Make a beautiful online course for your customers. Podia hosts your course. That means all the lessons, files, and videos you want handled for you.",
+    "image": "/images/digital_products-courses.webp"
+  },
+  "DOWNLOADS": {
+    "tag": "DIGITAL DOWNLOADS",
+    "title": "Ebooks, templates, and any file type you can think of",
+    "body": "Have an ebook to sell? Templates you love? Podia makes it easy to spin up a sales page and sell ebooks, templates, audio files, video files, spreadsheets, and any other file type.",
+    "image": "/images/digital_products-downloads.webp"
+  },
+  "COACHING": {
+    "tag": "COACHING",
+    "title": "One-on-one coaching and consultations, with billing managed for you",
+    "body": "Sometimes your students want one-on-one attention. Podia makes it easy for you to charge for coaching sessions and consultations.",
+    "image": "/images/digital_products-coaching.webp"
+  },
+  "WEBINARS": {
+    "tag": "WEBINARS",
+    "title": "Webinars and workshops with registration and payment in one place",
+    "body": "How can you charge for your webinars and workshops? Do it from your Podia site. Set up a paid webinar product and your customers can register straight from your website.",
+    "image": "/images/digital_products-webinars.webp"
+  }
+}
