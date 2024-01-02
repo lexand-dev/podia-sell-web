@@ -7,7 +7,16 @@ import Link from "./Link";
 
 const Header = () => {
   return (
-    <header className="flex py-5 w-full m-auto">
+    <header
+      className="
+      bg-podia
+      flex justify-center items-center
+      mx-auto
+      py-3
+      sticky top-0
+      w-full xl:w-[1120px]
+      z-10"
+    >
       <nav className="flex justify-center items-center m-auto px-4 gap-x-10">
         <Logo className="w-20 text-podia-primary" />
         <a href="/login">Login</a>
