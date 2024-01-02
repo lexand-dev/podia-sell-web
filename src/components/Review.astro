@@ -1,0 +1,17 @@
+---
+interface Props {
+  src: string;
+  quote: string;
+  subtext: string;
+}
+const { src, quote, subtext } = Astro.props;
+---
+<div>
+  <article class="mx-auto text-center">
+    <figure class="flex items-center justify-center">
+      <img src={src} alt="">
+    </figure>
+    <p class="font-zen-antique">{quote}</p>
+    <p class="">{subtext}</p>
+  </article>
+</div>

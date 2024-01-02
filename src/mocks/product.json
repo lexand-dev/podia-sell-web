@@ -3,19 +3,31 @@
     "tag": "ONLINE COURSES",
     "title": "Online Courses",
     "body": "Make a beautiful online course for your customers. Podia hosts your course. That means all the lessons, files, and videos you want handled for you.",
-    "image": "/images/digital_products-courses.webp"
+    "image": "/images/digital_products-courses.webp",
+    "review": {
+      "quote": "I’ve wanted to offer e-courses for a while but always felt overwhelmed with how to set it up. Podia has made it super easy.",
+      "subtext": "oy Cho, Oh Joy! Academy"
+    }
   },
   "DOWNLOADS": {
     "tag": "DIGITAL DOWNLOADS",
     "title": "Ebooks, templates, and any file type you can think of",
     "body": "Have an ebook to sell? Templates you love? Podia makes it easy to spin up a sales page and sell ebooks, templates, audio files, video files, spreadsheets, and any other file type.",
-    "image": "/images/digital_products-downloads.webp"
+    "image": "/images/digital_products-downloads.webp",
+    "review": {
+      "quote": "We didn’t have to stress about technical details or custom coding. Using Podia made selling our first eBook quick, efficient, and fun.",
+      "subtext": "Matt & Steph, Plant-based food bloggers"
+    }
   },
   "COACHING": {
     "tag": "COACHING",
     "title": "One-on-one coaching and consultations, with billing managed for you",
     "body": "Sometimes your students want one-on-one attention. Podia makes it easy for you to charge for coaching sessions and consultations.",
-    "image": "/images/digital_products-coaching.webp"
+    "image": "/images/digital_products-coaching.webp",
+    "review": {
+      "quote": "Podia just works. It’s easy to use and includes everything you need to sell digital products. I’ve tried all the alternatives, and Podia is hard to beat.",
+      "subtext": "Shawn Leamon, Divorce and Your Money"
+    }
   },
   "WEBINARS": {
     "tag": "WEBINARS",

@@ -5,6 +5,7 @@ import Figure from '@components/Figure.astro';
 import Grid from '@components/Grid.astro';
 import GridSection from '@components/GridSection.astro';
 import Paragraph from '@components/Paragraph.astro';
+import Review from '@components/Review.astro';
 import Section from '@components/Section.astro';
 import Button from '@components/react/Button.jsx';
 import Header from '@components/react/Header.jsx';
@@ -15,7 +16,7 @@ import Layout from '../layouts/Layout.astro';
 <Layout title="Welcome to Astro.">
 	<main>
 		<Header />
-		<Section>
+		<Section class="mt-28 mb-20">
 			<Container>
 				<div class="flex flex-col-reverse lg:flex-row gap-16">
 					<article>
@@ -32,11 +33,7 @@ import Layout from '../layouts/Layout.astro';
 							Get your free account
 						</Button>
 					</article>
-					<figure class="rounded-lg overflow-hidden">
-						<picture>
-							<img src="/images/digital_products-hero.webp" alt="">
-						</picture>
-					</figure>
+					<Figure class="w-[1580px]" src="/images/digital_products-hero.webp" alt='hero-image' />
 				</div>
 			</Container>
 		</Section>
@@ -61,9 +58,9 @@ import Layout from '../layouts/Layout.astro';
 				</GridSection>
 			</Container>
 		</Section>
-		<Section>
+		<Section class="my-28">
 			<Container>
-					// todo: add stars section component
+					<Review src='/images/Stars__1_.webp' quote={Products.COURSES.review.quote} subtext={Products.COURSES.review.subtext} />
 			</Container>
 		</Section>
 		<Section>
@@ -74,9 +71,9 @@ import Layout from '../layouts/Layout.astro';
 				</GridSection>
 			</Container>
 		</Section>
-		<Section>
+		<Section class="my-28">
 			<Container>
-					// todo: add stars section component
+					<Review src='/images/Stars__1_.webp' quote={Products.DOWNLOADS.review.quote} subtext={Products.DOWNLOADS.review.subtext} />
 			</Container>
 		</Section>
 		<Section>
@@ -87,9 +84,9 @@ import Layout from '../layouts/Layout.astro';
 				</GridSection>
 			</Container>
 		</Section>
-		<Section>
+		<Section class="my-28">
 			<Container>
-					// todo: add stars section component
+					<Review src='/images/Stars__1_.webp' quote={Products.COACHING.review.quote} subtext={Products.COACHING.review.subtext} />
 			</Container>
 		</Section>
 		<Section>
