@@ -2,7 +2,7 @@
 import '@fontsource/noto-sans';
 // Supports weights 100-900
 import '@fontsource-variable/inter';
-import '@fontsource/headland-one';
+import '@fontsource/zen-antique';
 
 interface Props {
 	title: string;
@@ -21,36 +21,20 @@ const { title } = Astro.props;
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
-	<body>
+	<body class="bg-podia">
 		<slot />
 	</body>
 </html>
 <style is:global>
-	:root {
-		--accent: 136, 58, 234;
-		--accent-light: 224, 204, 250;
-		--accent-dark: 49, 10, 101;
-		--accent-gradient: linear-gradient(
-			45deg,
-			rgb(var(--accent)),
-			rgb(var(--accent-light)) 30%,
-			white 60%
-		);
-	}
 	html {
-		font-family: system-ui, sans-serif;
-		background: #13151a;
-		background-size: 224px;
+		font-family: 'Inter Variable', sans-serif;
 	}
-	code {
-		font-family:
-			Menlo,
-			Monaco,
-			Lucida Console,
-			Liberation Mono,
-			DejaVu Sans Mono,
-			Bitstream Vera Sans Mono,
-			Courier New,
-			monospace;
+	body {
+		display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+	}
+	a {
+		text-decoration: none;
 	}
 </style>
