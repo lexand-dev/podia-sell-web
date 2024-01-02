@@ -1,0 +1,21 @@
+---
+interface Props {
+  tag: string
+  title: string
+  body: string
+}
+const { tag, title, body } = Astro.props
+---
+<article class="text-left">
+  <p class="text-podia-secondary text-xs tracking-widest font-semibold mb-2">
+    {tag}
+  </p>
+  <h2 class="text-lg font-zen-antique text-[#1A1715] my-4">
+    {title}
+  </h2>
+  <div class="text-sm leading-loose font-normal">
+    <p>
+      {body}
+    </p>
+  </div>
+</article>

@@ -1,0 +1,38 @@
+---
+import ArticleItem from "./ArticleItem.astro";
+const ARTICLES = [
+  {
+    title: "Checkout and sales are handled for you",
+    body:
+      "You don’t have to figure out a bunch of tools or website embeds. Just connect a payment provider and your Podia site takes care of payments for you.",
+    src: "/images/digital_products-icon-login.svg",
+  },
+  {
+    title: "Your customers log in, and your products are there for them",
+    body:
+      "Your Podia site handles access to products for you. Everything is in one place. When your customers buy a product, they get a log in. After that, they can see all the products they’ve bought from you.",
+    src: "/images/digital_products-icon-cart.svg",
+  },
+  {
+    title: "Upload your product. Make your sales page. Done.",
+    body:
+      "You could sell a digital product by this afternoon. Podia handles hosting, sales pages, checkout, and delivery. All you need is something to sell.",
+    src: "/images/digital_products-icon-upload.svg",
+  },
+]
+---
+<div class="grid gap-y-16 gap-x-8 grid-cols-1 lg:grid-cols-3 ">
+  <header class="mx-auto text-center lg:col-span-3">
+    <h2 class="font-zen-antique font-medium text-3xl text-center text-[#1A1715]">
+      All you have to do is make the product. Podia takes care of the details for you.
+    </h2>
+    <p class="text-lg text-podia-description mt-4 text-center leading-relaxed">
+      Podia lets you make your sales page, take payments, and give your customers access all in one place. Host and sell your products without needing to figure out a handful of new tools.
+    </p>
+  </header>
+    {
+      ARTICLES.map((article) => (
+        <ArticleItem {...article} />
+      ))
+    }
+</div>
