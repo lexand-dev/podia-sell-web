@@ -8,10 +8,10 @@ const { src, quote, subtext } = Astro.props;
 ---
 <div>
   <article class="mx-auto text-center">
-    <figure class="flex items-center justify-center">
-      <img src={src} alt="">
+    <figure class="mx-auto max-w-44 mb-4">
+      <img class="w-full h-auto" src={src} alt="">
     </figure>
-    <p class="font-zen-antique">{quote}</p>
-    <p class="">{subtext}</p>
+    <p class="font-zen-antique md:text-xl">{quote}</p>
+    <p class="mt-5 text-lg text-podia-description">- {subtext}</p>
   </article>
 </div>
