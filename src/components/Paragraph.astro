@@ -1,4 +1,7 @@
-<div class="text-lg text-podia-description mt-4 text-left leading-relaxed">
+---
+const { class: className } = Astro.props
+---
+<div class=`text-lg text-podia-description mt-4 leading-relaxed ${className}`>
   <p class="font-noto-sans">
     <slot/>
   </p>

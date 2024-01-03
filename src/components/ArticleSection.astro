@@ -1,21 +1,31 @@
 ---
+import MoreLink from './MoreLink.astro'
 interface Props {
   tag: string
   title: string
   body: string
+  href: string
+  cta: string
+  class?: string
 }
-const { tag, title, body } = Astro.props
+const { tag, title, body, class: className, cta, href } = Astro.props
 ---
-<article class="text-left">
+<article class=`${className} text-left`>
   <p class="text-podia-secondary text-xs tracking-widest font-semibold mb-2">
     {tag}
   </p>
-  <h2 class="text-lg font-zen-antique text-[#1A1715] my-4">
+  <h2 class="text-xl md:text-2xl font-medium font-zen-antique text-[#1A1715] my-2 lg:my-4">
     {title}
   </h2>
-  <div class="text-sm leading-loose font-normal">
+  <div class="text-base md:text-lg leading-loose font-normal text-podia-description">
     <p>
       {body}
     </p>
   </div>
+  <MoreLink class='text-podia-primary' href={href}>
+    {cta}
+    <span class="ml-1 font-bold text-2xl">
+      →
+    </span>
+  </MoreLink>
 </article>
