@@ -1,17 +1,23 @@
 const button = ({
   href,
   children,
+  className,
 }: {
   href: string;
   children: React.ReactNode;
+  className?: string;
 }) => {
   return (
-    <a
-      href={href}
-      className="bg-podia-primary hover:bg-podia-primary-light text-white font-bold my-5 py-2 px-4 rounded-full w-full text-center block"
-    >
-      {children}
-    </a>
+    <div className="flex">
+      <p>
+        <a
+          href={href}
+          className={`font-bold my-4 py-3 rounded-full w-full block bg-podia-primary text-white hover:bg-podia-primary-light px-6 ${className}`}
+        >
+          {children}
+        </a>
+      </p>
+    </div>
   );
 };
 
