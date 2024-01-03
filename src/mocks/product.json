@@ -1,9 +1,13 @@
 {
   "COURSES": {
     "tag": "ONLINE COURSES",
-    "title": "Online Courses",
+    "title": "Beautiful online courses you can build in moments",
     "body": "Make a beautiful online course for your customers. Podia hosts your course. That means all the lessons, files, and videos you want handled for you.",
     "image": "/images/digital_products-courses.webp",
+    "cta": {
+      "text": "Learn more about courses",
+      "link": "/signup"
+    },
     "review": {
       "quote": "I’ve wanted to offer e-courses for a while but always felt overwhelmed with how to set it up. Podia has made it super easy.",
       "subtext": "oy Cho, Oh Joy! Academy"
@@ -14,6 +18,10 @@
     "title": "Ebooks, templates, and any file type you can think of",
     "body": "Have an ebook to sell? Templates you love? Podia makes it easy to spin up a sales page and sell ebooks, templates, audio files, video files, spreadsheets, and any other file type.",
     "image": "/images/digital_products-downloads.webp",
+    "cta": {
+      "text": "Learn more about downloads",
+      "link": "/signup"
+    },
     "review": {
       "quote": "We didn’t have to stress about technical details or custom coding. Using Podia made selling our first eBook quick, efficient, and fun.",
       "subtext": "Matt & Steph, Plant-based food bloggers"
@@ -24,6 +32,10 @@
     "title": "One-on-one coaching and consultations, with billing managed for you",
     "body": "Sometimes your students want one-on-one attention. Podia makes it easy for you to charge for coaching sessions and consultations.",
     "image": "/images/digital_products-coaching.webp",
+    "cta": {
+      "text": "Learn more about coaching",
+      "link": "/signup"
+    },
     "review": {
       "quote": "Podia just works. It’s easy to use and includes everything you need to sell digital products. I’ve tried all the alternatives, and Podia is hard to beat.",
       "subtext": "Shawn Leamon, Divorce and Your Money"
@@ -33,6 +45,10 @@
     "tag": "WEBINARS",
     "title": "Webinars and workshops with registration and payment in one place",
     "body": "How can you charge for your webinars and workshops? Do it from your Podia site. Set up a paid webinar product and your customers can register straight from your website.",
-    "image": "/images/digital_products-webinars.webp"
+    "image": "/images/digital_products-webinars.webp",
+    "cta": {
+      "text": "Learn more about webinars",
+      "link": "/signup"
+    }
   }
 }
