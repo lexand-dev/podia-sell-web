@@ -8,12 +8,11 @@ const button = ({
   className?: string;
 }) => {
   return (
-    <div className="flex">
+    <div
+      className={`${className} flex items-center justify-center font-bold my-4 py-3 rounded-full w-full text-white hover:bg-podia-primary-light px-6 text-center`}
+    >
       <p>
-        <a
-          href={href}
-          className={`font-bold my-4 py-3 rounded-full w-full block bg-podia-primary text-white hover:bg-podia-primary-light px-6 ${className}`}
-        >
+        <a href={href} className={``}>
           {children}
         </a>
       </p>
