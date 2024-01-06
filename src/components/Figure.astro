@@ -1,21 +1,24 @@
 ---
 interface Props {
-  src: string
-  alt: string
-  class?: string
+  src: string;
+  alt: string;
+  class?: string;
 }
-const { class: className, src, alt } = Astro.props
+const { class: className, src, alt } = Astro.props;
 ---
-<figure class="rounded-lg overflow-hidden">
+
+<figure class="rounded-lg overflow-hidden self-center">
   <picture>
-    <img class={
-      `
+    <img
+      class={`
         w-full
         h-auto
         object-cover
         object-center
         ${className}
-      `
-    } src={src} alt={alt}>
+      `}
+      src={src}
+      alt={alt}
+    />
   </picture>
 </figure>

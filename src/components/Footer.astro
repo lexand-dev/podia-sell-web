@@ -4,9 +4,16 @@ import Listlink from "./react/Listlink.tsx";
 ---
 
 <footer
-  class="py-10 bg-podia-shadow box-content px-5 lg:px-10 max-w-5xl lg:max-w-5xl 2xl:max-w-7xl"
+  class="py-10
+    px-5
+  bg-podia-shadow
+    w-full
+    lg:px-10
+    lg:w-full"
 >
-  <div class="px-5 flex flex-col gap-y-4">
+  <div
+    class="px-5 flex flex-col gap-y-4 max-w-5xl lg:max-w-6xl xl:max-w-7xl mx-auto xl:px-0"
+  >
     <Listlink client:visible name="Platform">
       <Link href="/about">Pricing</Link>
       <Link href="/about">Sign up free</Link>
@@ -63,7 +70,7 @@ import Listlink from "./react/Listlink.tsx";
       <p>
         <small>
           Podia Labs, Inc. &copy; 2024
-          <span class="flex gap-2">
+          <span class="flex md:inline-flex gap-2">
             <Link href="/about">Terms</Link>
             <Link href="/about">Privacy</Link>
           </span>

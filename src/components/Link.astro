@@ -7,7 +7,7 @@ const { class: className, href } = Astro.props;
 ---
 
 <a
-  class={`link-footer text-base mb-2 text-podia-description ${className}`}
+  class={`link-footer text-base xl:text-lg text-podia-description hover:text-podia-primary ${className}`}
   href={href}
 >
   <slot />
@@ -17,5 +17,6 @@ const { class: className, href } = Astro.props;
   .link-footer {
     text-decoration: underline;
     text-underline-position: under;
+    text-decoration-thickness: 1px;
   }
 </style>

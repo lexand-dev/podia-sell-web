@@ -9,15 +9,13 @@ import Hero from "@components/Hero.astro";
 import PreFooter from "@components/PreFooter.astro";
 import Review from "@components/Review.astro";
 import Section from "@components/Section.astro";
-import Header from "@components/react/Header.jsx";
 import Products from "../../src/mocks/product.json";
 import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Host and sell digital products">
-  <Header />
   <main>
-    <Section class="mt-20 mb-20">
+    <Section class="mt-20 mb-20 lg:mt-32">
       <Container>
         <Hero />
       </Container>
@@ -27,19 +25,19 @@ import Layout from "../layouts/Layout.astro";
         <Grid />
       </Container>
     </Section>
-    <Section class="mt-20">
+    <Section class="mt-20 lg:mt-32">
       <Container>
         <GridSection>
           <header
-            class="mx-auto text-center order-1 lg:order-none lg:col-span-2"
+            class="mx-auto text-center order-1 lg:order-none lg:col-span-2 lg:max-w-5xl"
           >
             <h2
-              class="font-tiempos text-2xl lg:text-3xl text-center text-[#1A1715]"
+              class="font-tiempos text-2xl lg:text-4xl text-center text-[#1A1715]"
             >
               What kinds of products can you sell with Podia?
             </h2>
             <p
-              class="text-lg text-podia-description mt-4 text-center leading-relaxed order-2 lg:order-none"
+              class="text-lg lg:lg:text-xl text-podia-description mt-4 text-center leading-relaxed order-2 lg:order-none"
             >
               Podia gives you the flexibility to sell whatever you want. That
               means you have more ways to grow your creator business.
@@ -61,7 +59,7 @@ import Layout from "../layouts/Layout.astro";
         </GridSection>
       </Container>
     </Section>
-    <Section class="mt-12 mb-24 md:my-20 lg:my-28">
+    <Section class="mt-12 mb-24 md:my-20 lg:my-32">
       <Container>
         <Review
           src="/images/Stars__1_.webp"
@@ -89,7 +87,7 @@ import Layout from "../layouts/Layout.astro";
         </GridSection>
       </Container>
     </Section>
-    <Section class="mt-12 mb-24 md:my-20 lg:my-28">
+    <Section class="mt-12 mb-24 md:my-20 lg:my-32">
       <Container>
         <Review
           src="/images/Stars__1_.webp"
@@ -117,7 +115,7 @@ import Layout from "../layouts/Layout.astro";
         </GridSection>
       </Container>
     </Section>
-    <Section class="mt-12 mb-24 md:my-20 lg:my-28">
+    <Section class="mt-12 mb-24 md:my-20 lg:my-32">
       <Container>
         <Review
           src="/images/Stars__1_.webp"
@@ -126,7 +124,7 @@ import Layout from "../layouts/Layout.astro";
         />
       </Container>
     </Section>
-    <Section class="mt-12 mb-24 md:my-20 lg:my-28">
+    <Section class="mt-12 mb-24 md:my-20 lg:my-32">
       <Container>
         <GridSection>
           <ArticleSection
@@ -145,7 +143,7 @@ import Layout from "../layouts/Layout.astro";
         </GridSection>
       </Container>
     </Section>
-    <Section class="mb-24 md:my-20 lg:my-28">
+    <Section class="mb-24 md:my-20 lg:my-32">
       <Container>
         <PreFooter />
       </Container>
