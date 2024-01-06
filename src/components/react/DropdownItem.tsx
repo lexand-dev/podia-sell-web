@@ -6,7 +6,7 @@ interface DropdownItemProps {
 const DropdownItem: React.FC<DropdownItemProps> = ({ title, children }) => {
   return (
     <div tabIndex={0} className="collapse collapse-arrow">
-      <div className="collapse-title text-xl font-medium font-headland">
+      <div className="collapse-title text-xl font-normal font-tiempos">
         {title}
       </div>
       <div className="collapse-content">
