@@ -16,7 +16,7 @@ export default {
     },
     extend: {
       fontFamily: {
-        headland: "Headland One",
+        tiempos: ["tiempos", "sans-serif"],
         "zen-antique": "Zen Antique",
       },
     },
