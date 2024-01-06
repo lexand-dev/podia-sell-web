@@ -10,7 +10,7 @@ const Dropdown: React.FC<DropdownProps> = ({ title, children, className }) => {
       <div
         tabIndex={0}
         role="button"
-        className="flex justify-center items-center text-center px-4 m-1 bg-podia"
+        className="flex justify-center items-center text-center px-4 m-1"
       >
         {title}
         <svg

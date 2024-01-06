@@ -36,12 +36,12 @@ const Navigation = ({ name, children }: Props) => {
           </svg>
         </span>
       </button>
-      <p className="font-bold text-lg hidden lg:block">{name}</p>
+      <p className="font-bold text-lg hidden lg:block pr-2 p-0">{name}</p>
       <div
         className={
           isHidden
-            ? "hidden lg:flex flex-col lg:flex-row"
-            : "flex flex-col lg:flex-row gap-y-3"
+            ? "hidden lg:flex flex-col lg:flex-row gap-x-4 items-center"
+            : "flex flex-col lg:flex-row gap-y-3 md:gap-y-5"
         }
       >
         {children}
