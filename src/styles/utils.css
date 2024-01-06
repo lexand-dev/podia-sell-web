@@ -1,0 +1,14 @@
+#header-nav {
+  background-color:#FDFBF9;
+  animation: blur linear both;
+  animation-timeline: scroll();
+  animation-range: 0 500px;
+  z-index: 10;
+}
+
+@keyframes blur {
+  to {
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+  }
+}
