@@ -11,12 +11,12 @@ interface Props {
 const { tag, title, body, class: className, cta, href } = Astro.props;
 ---
 
-<article class=`${className} text-left`>
+<article class=`${className} text-left self-center`>
   <p class="text-podia-secondary text-xs tracking-widest font-semibold mb-2">
     {tag}
   </p>
   <h2
-    class="text-xl md:text-2xl font-semibold font-tiempos text-[#1A1715] my-2 lg:my-4"
+    class="text-xl md:text-2xl lg:text-3xl font-semibold font-tiempos text-[#1A1715] my-2 lg:my-4"
   >
     {title}
   </h2>

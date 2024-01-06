@@ -13,11 +13,11 @@ const { src, title, body } = Astro.props;
       <img class="size-14" src={src} alt="" />
     </figure>
   </div>
-  <h2 class="text-lg lg:text-lg font-tiempos text-[#1A1715] my-4">
+  <h2 class="text-lg leading-loose lg:text-xl font-tiempos text-[#1A1715] my-4">
     {title}
   </h2>
-  <div class="text-sm leading-loose font-normal">
-    <p>
+  <div>
+    <p class="text-sm lg:text-[0.95rem] leading-loose text-podia-description">
       {body}
     </p>
   </div>
