@@ -1,0 +1,30 @@
+---
+import Figure from "@components/Figure.astro";
+import Paragraph from "@components/Paragraph.astro";
+import Button from "@components/react/Button.jsx";
+---
+
+<div class="w-full flex flex-col-reverse lg:flex-row gap-16">
+  <article>
+    <p class="text-podia-secondary text-xs tracking-widest font-semibold mb-2">
+      DIGITAL PRODUCTS
+    </p>
+    <h2 class="font-tiempos text-3xl md:text-4xl leading-snug">
+      Sell online courses, coaching sessions, webinars, workshops, ebooks, and
+      anything you can think of on Podia
+    </h2>
+    <Paragraph class="md:text-lg">
+      Get everything you need in one place that you own. Podia takes care of
+      hosting products, taking payments, and getting products to your customers.
+      And you always control your own work.
+    </Paragraph>
+    <Button className="bg-podia-primary w-60" href="/signup">
+      Get your free account
+    </Button>
+  </article>
+  <Figure
+    class="w-[1580px]"
+    src="/images/digital_products-hero.webp"
+    alt="hero-image"
+  />
+</div>

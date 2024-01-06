@@ -1,18 +1,19 @@
 ---
 interface Props {
-  src: string
-  title: string
-  body: string
+  src: string;
+  title: string;
+  body: string;
 }
-const { src, title, body } = Astro.props
+const { src, title, body } = Astro.props;
 ---
+
 <article class="text-center">
   <div class="w-full h-auto flex flex-col items-center justify-center mb-4">
     <figure class="">
-      <img class="size-14" src={src} alt="">
+      <img class="size-14" src={src} alt="" />
     </figure>
   </div>
-  <h2 class="text-lg font-medium font-zen-antique text-[#1A1715] my-4">
+  <h2 class="text-lg lg:text-lg font-tiempos text-[#1A1715] my-4">
     {title}
   </h2>
   <div class="text-sm leading-loose font-normal">

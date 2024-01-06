@@ -1,11 +1,11 @@
 ---
-import '@fontsource/noto-sans';
+import "@fontsource/noto-sans";
 // Supports weights 100-900
-import '@fontsource-variable/inter';
-import '@fontsource/zen-antique';
+import "@fontsource-variable/inter";
+import "@fontsource/zen-antique";
 
 interface Props {
-	title: string;
+  title: string;
 }
 
 const { title } = Astro.props;
@@ -13,29 +13,101 @@ const { title } = Astro.props;
 
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="description" content="Astro description" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
-	</head>
-	<body class="bg-podia">
-		<slot />
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Online courses, digital downloads, coaching/consultations, and webinars. Podia makes it easy to host and sell amazing digital products."
+    />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.png" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+    <link
+      rel="preload"
+      href="/fonts/Inter-Regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+
+    <link
+      rel="preload"
+      href="/fonts/Inter-SemiBold.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="/fonts/Inter-Bold.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="/fonts/tiempos-headline-web-medium.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="/fonts/tiempos-headline-web-regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+  </head>
+
+  <slot name="preload" />
+  <body class="bg-podia">
+    <slot />
+  </body>
+
+  <style is:global>
+    @font-face {
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: normal;
+      font-display: swap;
+      src: url("/fonts/Inter-Regular.woff2") format("woff2");
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+        U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC,
+        U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
+    @font-face {
+      font-family: "tiempos";
+      font-style: normal;
+      font-display: swap;
+      src: url("/fonts/tiempos-headline-web-medium.woff2") format("woff2");
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+        U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC,
+        U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
+    @font-face {
+      font-family: "tiempos";
+      font-style: normal;
+      font-display: swap;
+      src: url("/fonts/tiempos-headline-web-regular.woff2") format("woff2");
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+        U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC,
+        U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
+    html {
+      font-family: "Inter", sans-serif;
+    }
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      line-height: 1.8;
+    }
+    a {
+      text-decoration: none;
+    }
+  </style>
+
+
 </html>
-<style is:global>
-	html {
-		font-family: 'Inter Variable', sans-serif;
-	}
-	body {
-		display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-		line-height: 1.8;
-	}
-	a {
-		text-decoration: none;
-	}
-</style>

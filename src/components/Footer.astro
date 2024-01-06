@@ -1,64 +1,80 @@
 ---
-import DropdownItem from '@components/react/DropdownItem';
-import Link from '@components/react/Link';
+import Link from "@components/Link.astro";
+import Listlink from "./react/Listlink.tsx";
 ---
-<footer class="py-10">
-  <div class="px-5">
-    <DropdownItem title="Platform">
+
+<footer
+  class="py-10 bg-podia-shadow box-content px-5 lg:px-10 max-w-5xl lg:max-w-5xl 2xl:max-w-7xl"
+>
+  <div class="px-5 flex flex-col gap-y-4">
+    <Listlink client:visible name="Platform">
+      <Link href="/about">Pricing</Link>
+      <Link href="/about">Sign up free</Link>
+      <Link href="/about">Community</Link>
       <Link href="/about">Website builder</Link>
-      <Link href="/about">Website examples</Link>
-      <Link href="/about">Landing pages</Link>
-      <Link href="/about">Link in bio pages</Link>
-      <Link href="/about">Portfolio Website</Link>
-      <Link href="/about">Integrations</Link>
-    </DropdownItem>
-    <DropdownItem title="Platform">
-      <Link href="/about">Website builder</Link>
-      <Link href="/about">Website examples</Link>
-      <Link href="/about">Landing pages</Link>
-      <Link href="/about">Link in bio pages</Link>
-      <Link href="/about">Portfolio Website</Link>
-      <Link href="/about">Integrations</Link>
-    </DropdownItem>
-    <DropdownItem title="Platform">
-      <Link href="/about">Website builder</Link>
-      <Link href="/about">Website examples</Link>
-      <Link href="/about">Landing pages</Link>
-      <Link href="/about">Link in bio pages</Link>
-      <Link href="/about">Portfolio Website</Link>
-      <Link href="/about">Integrations</Link>
-    </DropdownItem>
-    <DropdownItem title="Platform">
-      <Link href="/about">Website builder</Link>
-      <Link href="/about">Website examples</Link>
-      <Link href="/about">Landing pages</Link>
-      <Link href="/about">Link in bio pages</Link>
-      <Link href="/about">Portfolio Website</Link>
-      <Link href="/about">Integrations</Link>
-    </DropdownItem>
-    <DropdownItem title="Platform">
-      <Link href="/about">Website builder</Link>
-      <Link href="/about">Website examples</Link>
-      <Link href="/about">Landing pages</Link>
-      <Link href="/about">Link in bio pages</Link>
-      <Link href="/about">Portfolio Website</Link>
-      <Link href="/about">Integrations</Link>
-    </DropdownItem>
-    <DropdownItem title="Platform">
-      <Link href="/about">Website builder</Link>
-      <Link href="/about">Website examples</Link>
-      <Link href="/about">Landing pages</Link>
-      <Link href="/about">Link in bio pages</Link>
-      <Link href="/about">Portfolio Website</Link>
-      <Link href="/about">Integrations</Link>
-    </DropdownItem>
-    <DropdownItem title="Platform">
-      <Link href="/about">Website builder</Link>
-      <Link href="/about">Website examples</Link>
-      <Link href="/about">Landing pages</Link>
-      <Link href="/about">Link in bio pages</Link>
-      <Link href="/about">Portfolio Website</Link>
-      <Link href="/about">Integrations</Link>
-    </DropdownItem>
+      <Link href="/about">Digital products</Link>
+      <Link href="/about">Email marketing</Link>
+    </Listlink>
+    <Listlink client:visible name="Support">
+      <Link href="/about">Contact us</Link>
+      <Link href="/about">Help center</Link>
+      <Link href="/about">Hire a Podia pro</Link>
+      <Link href="/about">Creator community</Link>
+      <Link href="/about">Podia 101</Link>
+    </Listlink>
+    <Listlink client:visible name="Features">
+      <Link href="/about">Online courses</Link>
+      <Link href="/about">Downloads</Link>
+      <Link href="/about">Webinars</Link>
+      <Link href="/about">Coaching</Link>
+      <Link href="/about">All features</Link>
+    </Listlink>
+    <Listlink client:visible name="Compare">
+      <Link href="/about">Kajabi</Link>
+      <Link href="/about">Teachable</Link>
+      <Link href="/about">Thinkific</Link>
+      <Link href="/about">Patreon</Link>
+      <Link href="/about">Gumroad</Link>
+      <Link href="/about">Podia alternatives</Link>
+    </Listlink>
+    <Listlink client:visible name="Resources">
+      <Link href="/about">Examples</Link>
+      <Link href="/about">Demo</Link>
+      <Link href="/about">Creator stories</Link>
+      <Link href="/about">Blog</Link>
+      <Link href="/about">Free tools</Link>
+      <Link href="/about">All resources</Link>
+    </Listlink>
+    <Listlink client:visible name="Podia">
+      <Link href="/about">Jobs</Link>
+      <Link href="/about">About</Link>
+      <Link href="/about">Branding</Link>
+      <Link href="/about">Reviews</Link>
+      <Link href="/about">Refer-a-creator</Link>
+      <Link href="/about">Affiliates</Link>
+    </Listlink>
+    <Listlink client:visible name="Social">
+      <Link href="/about">Twitters</Link>
+      <Link href="/about">Facebook</Link>
+      <Link href="/about">Instagram</Link>
+      <Link href="/about">Youtube</Link>
+    </Listlink>
+    <div class="mt-5 mb-3">
+      <p>
+        <small>
+          Podia Labs, Inc. &copy; 2024
+          <span class="flex gap-2">
+            <Link href="/about">Terms</Link>
+            <Link href="/about">Privacy</Link>
+          </span>
+        </small>
+      </p>
+    </div>
   </div>
 </footer>
+<style>
+  footer .link-footer {
+    text-underline-position: under;
+    text-decoration: underline;
+  }
+</style>
